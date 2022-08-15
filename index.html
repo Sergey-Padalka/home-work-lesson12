@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col">
           <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+            <div class="container">
               <a class="navbar-brand" href="#">LOGO</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
                 aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,8 @@
   <div class="container">
     <div class="row">
       <div class="py-5 mb-4 col-xxl-8 col-xl-9">
-        <div class="accordion accordion-flush" id="accordion">
+        <h2 class="text-center py-3">Мир наизнанку</h2>
+        <div class="accordion accordion-flush mb-5" id="accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headerOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -135,50 +136,69 @@
           </div>
         </div>
 
-        <form class="py-5 row g-3">
-          <div class="col-md-6">
-            <label for="Email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="Email" placeholder="email:">
-          </div>
-          <div class="col-md-6">
-            <label for="password" class="form-label">Пароль</label>
-            <input type="password" class="form-control" id="password" placeholder="Пароль">
-          </div>
-          <div class="col-md-6">
-            <label for="surname" class="form-label">Фамилия</label>
-            <input type="text" class="form-control" id="surname" placeholder="Фамилия">
-          </div>
-          <div class="col-md-6">
-            <label for="name" class="form-label">Имя</label>
-            <input type="text" class="form-control" id="name" placeholder="Имя">
-          </div>
-          <fieldset class="col mb-6">
-            <legend class="col-form-label col-sm-5">Интересы</legend>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-input" type="checkbox" id="Check1">
-                <label class="form-label" for="Check1">
-                  Древний Рим
-                </label>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#modalForm">
+          Присоедениться к команде
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFormLabel">Подписаться на библиотеку</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="form-check">
-                <input class="form-input" type="checkbox" id="Check2">
-                <label class="form-label" for="Check2">
-                  Мистика
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-input" type="checkbox" id="Check3">
-                <label class="form-label" for="Check3">
-                  Старая Европа
-                </label>
+              <div class="modal-body">
+                <form class="py-5 row g-3">
+                  <div class="md-6">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="email:">
+                  </div>
+                  <div class="md-6">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                  </div>
+                  <div class="md-6">
+                    <label for="surname" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Фамилия">
+                  </div>
+                  <div class="md-6">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                  </div>
+                  <fieldset class="mb-6">
+                    <legend class="col-form-label col-sm-5">Интересы</legend>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-input" type="checkbox" id="Check1">
+                        <label class="form-label" for="Check1">
+                          Древний Рим
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-input" type="checkbox" id="Check2">
+                        <label class="form-label" for="Check2">
+                          Мистика
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-input" type="checkbox" id="Check3">
+                        <label class="form-label" for="Check3">
+                          Старая Европа
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-outline-success">Отправить</button>
+                  </div>
+                </form>
               </div>
             </div>
-          </fieldset>
-          <div class="col-12">
-            <button type="submit" class="btn btn-outline-success">Отправить</button>
           </div>
-        </form>
+        </div>
+
       </div>
 
       <div class="py-5 mb-4 col-xxl-2 col-xl-3 col-lg-6 order-xl-first">
@@ -208,7 +228,33 @@
         </div>
       </div>
 
-      <div class="py-5 mb-4 col-xxl-2 col-xl-12 col-lg-6"><span>RIGHT</span></div>
+      <div class="py-5 mb-4 col-xxl-2 col-xl-12 col-lg-6">
+        <div class="card">
+          <img src="assets/img/legend.jpg" class="card-img-top" alt="legendPictures">
+          <div class="card-body">
+            <h2 class="card-title">История и легенды древнего мира</h2>
+            <p class="card-text">Мифы и легенды рассказывают нам о людях древности — героях, богах и простых смертных,
+              отражают ощущение людьми себя и
+              своего места в мире, а также передают первобытные представления о природе всех вещей. В мифах и легендах
+              родились вечные
+              сюжеты, которые переписывают и подгоняют под себя литература и искусство последующих эпох. Таким образом,
+              их знание
+              раскрывает перед читателем или посетителем галереи совершенно новые горизонты, учит узнавать уже знакомые
+              сюжеты и
+              по-новому их интерпретировать.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Мифы со всего света</li>
+            <li class="list-group-item">Скандинавские боги</li>
+            <li class="list-group-item">Мифы и притчи классической древности</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Притчи и сазки</a>
+            <a href="#" class="card-link">Легенды и мифы</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
